@@ -70,35 +70,38 @@ html, body {
 }
 
 #task-menu {
-  background: url('../img/bkg-img.jpg') center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  // height: 18.75rem;
   .task-menu-header {
-    background: $bkg-img-1b-rgba;
-    padding: 3.125rem 0.9375rem;
-    text-align: right;
-    .logo {
-      font-family: 'El Messiri', sans-serif;
-      float: left;
-      font-size: 2.25rem;
-    }
-    .tasks-total {
-      position: relative;
-      .task-menu-tasks {
-        display: inline-block;
-        top: -20px;
-        .number {
-          font-size: 60px;
-          font-weight: 100;
-          margin:0 10px 0 0;
-          position: relative;
-          top: 15px;
+    background: url('../img/bkg-img.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // height: 18.75rem;
+    .top {
+      background: $bkg-img-1b-rgba;
+      padding: 3.125rem 0.9375rem;
+      text-align: right;
+      .logo {
+        font-family: 'El Messiri', sans-serif;
+        float: left;
+        font-size: 2.25rem;
+      }
+      .tasks-total {
+        position: relative;
+        .task-menu-tasks {
+          display: inline-block;
+          top: -20px;
+          .number {
+            font-size: 60px;
+            font-weight: 100;
+            margin:0 10px 0 0;
+            position: relative;
+            top: 15px;
+          }
         }
       }
     }
   }
+
   .add-task-icon {
     background: $bkg-img-3-hex;
     border-radius: 50%;
@@ -111,6 +114,10 @@ html, body {
       font-size: 50px;
     }
   }
+}
+
+.container {
+  max-width: 75rem;
 }
 
 .btn {
