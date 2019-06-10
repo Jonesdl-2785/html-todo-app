@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700&display=swap&subset=arabic,cyrillic');
 @import "reset";
 
 /* Color Theme Swatches in Hex */
@@ -11,11 +12,12 @@ $bkg-img-5-hex: #BF7878;
 /* Color Theme Swatches in RGBA */
 $bkg-img-1-rgba: rgba(27,46,64, 1);
 $bkg-img-1a-rgba: rgba(27,46,64, .6);
+$bkg-img-1b-rgba: rgba(27,46,64, .4);
 $bkg-img-2-rgba: rgba(145,196,217, 1);
 $bkg-img-3-rgba: rgba(242,216,206, 1);
 $bkg-img-4-rgba: rgba(242,185,172, 1);
 $bkg-img-5-rgba: rgba(191,120,120, 1);
-$bkg-img-5a-rgba: rgba(191,120,120, .4);
+$bkg-img-5a-rgba: rgba(191,120,120, .6);
 
 /* Color Theme Swatches in HSLA */
 $bkg-img-1-hsla: hsla(209, 40, 17, 1);
@@ -44,19 +46,6 @@ html, body {
   height: 100%;
 }
 
-.home-welcome {
-  background:$bkg-img-1a-rgba;
-  padding: 2rem .94rem;
-  text-align: center;
-  h1 {
-    font-family: 'Roboto', sans-serif;
-    color: $bkg-img-3-hex;
-    font-size: 1.75rem;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-}
-
 #home {
   background: url('../img/bkg-img.jpg') center center;
   background-size: cover;
@@ -66,6 +55,69 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  .home-welcome {
+    background:$bkg-img-1a-rgba;
+    padding: 2rem .94rem;
+    text-align: center;
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color: $bkg-img-3-hex;
+      font-size: 1.75rem;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#task-menu {
+  .task-menu-header {
+    background: url('../img/bkg-img.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // height: 18.75rem;
+    .top {
+      background: $bkg-img-1b-rgba;
+      padding: 3.125rem 0.9375rem;
+      text-align: right;
+      .logo {
+        font-family: 'El Messiri', sans-serif;
+        float: left;
+        font-size: 2.25rem;
+      }
+      .tasks-total {
+        position: relative;
+        .task-menu-tasks {
+          display: inline-block;
+          top: -20px;
+          .number {
+            font-size: 60px;
+            font-weight: 100;
+            margin:0 10px 0 0;
+            position: relative;
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .add-task-icon {
+    background: $bkg-img-3-hex;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    right: 25px;
+    padding: 10px 12px;
+    .fas {
+      color: $bkg-img-4-hex;
+      font-size: 50px;
+    }
+  }
+}
+
+.container {
+  max-width: 75rem;
 }
 
 .btn {
@@ -75,6 +127,4 @@ html, body {
   text-align: center;
   background: $bkg-img-5-hex;
   font-size: 1.6rem;
-
-
 }
