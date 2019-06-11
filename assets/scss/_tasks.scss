@@ -1,0 +1,85 @@
+#task-menu {
+  .task-menu-header {
+    background: url('../img/bkg-img.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // height: 18.75rem;
+    .top {
+      background: $bkg-img-1b-rgba;
+      padding: 3.125rem 0.9375rem;
+      text-align: right;
+      .logo {
+        font-family: 'El Messiri', sans-serif;
+        float: left;
+        font-size: 2.25rem;
+      }
+      .tasks-total {
+        position: relative;
+        .task-menu-tasks {
+          display: inline-block;
+          top: -20px;
+          .number {
+            font-size: 60px;
+            font-weight: 100;
+            margin:0 10px 0 0;
+            position: relative;
+            top: 15px;
+          }
+        }
+      }
+    }
+    .add-task-icon {
+      background: $bkg-img-3-hex;
+      border-radius: 50%;
+      position: absolute;
+      top: 75px;
+      right: 25px;
+      padding: 10px 12px;
+      .fas {
+        color: $bkg-img-4-hex;
+        font-size: 50px;
+      }
+    }
+  }
+  .task-content {
+      color: $bkg-img-3-hex;
+      width: 100%;
+      .tasks-container {
+        margin: 2.5rem 0;
+      .task-area {
+        padding: 1.25rem;
+        border-bottom: 2px solid $bkg-img-1-hex;
+        margin: 0 0 20px 0;
+        background: $bkg-img-2-hex;
+        position: relative;
+        .task-title {
+          color: $bkg-img-1-hex;
+          font-size: 1.5rem;
+          margin: 0 0 20px 0;
+        }
+        #date {
+          font-size: .875rem;
+        }
+        .check-icon .fas {
+          padding: 0.125rem;
+          border-radius: 10px;
+          border: 2px solid $bkg-img-1-hex;
+          display: inline-block;
+          position: absolute;
+          top: 1.57rem;
+          right: 1.57rem;
+          font-size: 30px;
+          color: $bkg-img-1-hex;
+        }
+      }
+    }
+  }
+}
+.container {
+  width: 56.25rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  display: block;
+  background: $bkg-img-3-hex;
+}
