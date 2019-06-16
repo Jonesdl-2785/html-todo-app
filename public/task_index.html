@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>To Do App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
@@ -12,6 +13,7 @@
 
 <body>
   <div id="task-menu">
+    <!-- Header -->
     <section class="task-menu-header">
       <div class="top">
         <div class="logo">Task Manager</div>
@@ -27,17 +29,66 @@
           </div>
         </div>
       </section>
+      <!-- Main Content  -->
       <section class="task-content">
         <div class="container">
+          <div class="tasks-container">
+           <div class="task-area">
+            <div class="task-title">
+              Buy new Dress
+            </div>
+            <div class="date">
+             <p id="date">Created: 12/14/19</p>
+            </div>
+            <div class="check-icon">
+              <i class="fas fa-check"></i>
+            </div>
+           </div>
 
+           <div class="task-area">
+            <div class="task-title">
+              Buy Groceries
+            </div>
+            <div class="date">
+             <p id="date"></p>
+            </div>
+            <div class="check-icon">
+              <i class="fas fa-check"></i>
+            </div>
+           </div>
+
+           <div class="task-area">
+            <div class="task-title">
+              Buy new Shoes
+            </div>
+            <div class="date">
+             <p id="date"></p>
+            </div>
+            <div class="check-icon">
+              <i class="fas fa-check"></i>
+            </div>
+           </div>
+
+           <div class="task-area">
+            <div class="task-title">
+              Buy new Bag
+            </div>
+            <div class="date">
+             <p id="date"></p>
+            </div>
+            <div class="check-icon">
+              <i class="fas fa-check"></i>
+            </div>
+           </div>
+
+          </div>
         </div>
-
       </section>
     </div>
   </div>
+  <script src="/js/index.js" charset="utf-8"></script>
   <!-- <div id="app"> </div>
   <script src="/js/dist/vendors~FirstComp.js"></script>
   <script src="/js/dist/FirstComp.js"></script> -->
 </body>
-
 </html>
