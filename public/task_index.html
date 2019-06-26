@@ -86,9 +86,18 @@
       </section>
     </div>
   </div>
-  <script src="/js/index.js" charset="utf-8"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
+  <script>
+  $( ".add-task-icon" ).on( "click", function() {
+    console.log('Show pop up');
+  });
+  </script>
+  <script src="/js/index.js"></script>
   <!-- <div id="app"> </div>
   <script src="/js/dist/vendors~FirstComp.js"></script>
-  <script src="/js/dist/FirstComp.js"></script> -->
 </body>
 </html>
